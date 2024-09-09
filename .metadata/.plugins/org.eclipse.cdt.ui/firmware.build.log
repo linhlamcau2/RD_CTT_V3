@@ -1,0 +1,698 @@
+
+**** Build of configuration 8258_mesh for project firmware ****
+
+make -j4 pre-build main-build 
+"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware/getver.sh"
+Building file: ../div_mod.S
+Building file: ../vendor/user_app/user_app.c
+ 
+Invoking: TC32 CC/Assembler
+Invoking: TC32 Compiler
+Building file: ../vendor/mesh/app.c
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/user_app/user_app.o" "../vendor/user_app/user_app.c"
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"div_mod.o" "../div_mod.S"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/mesh/app.o" "../vendor/mesh/app.c"
+Building file: ../vendor/mesh/app_att.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/mesh/app_att.o" "../vendor/mesh/app_att.c"
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+Finished building: ../div_mod.S
+ 
+Building file: ../vendor/mesh/main.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/mesh/main.o" "../vendor/mesh/main.c"
+Finished building: ../vendor/mesh/app_att.c
+Finished building: ../vendor/mesh/main.c
+ 
+ 
+Finished building: ../vendor/mesh/app.c
+Building file: ../vendor/common/app_beacon.c
+ 
+Building file: ../vendor/common/app_health.c
+Invoking: TC32 Compiler
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/app_beacon.o" "../vendor/common/app_beacon.c"
+Building file: ../vendor/common/app_heartbeat.c
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/app_health.o" "../vendor/common/app_health.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/app_heartbeat.o" "../vendor/common/app_heartbeat.c"
+Finished building: ../vendor/user_app/user_app.c
+ 
+Building file: ../vendor/common/app_provison.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/app_provison.o" "../vendor/common/app_provison.c"
+Finished building: ../vendor/common/app_beacon.c
+ 
+Building file: ../vendor/common/app_proxy.c
+Finished building: ../vendor/common/app_health.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/app_proxy.o" "../vendor/common/app_proxy.c"
+ 
+Building file: ../vendor/common/battery_check.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/battery_check.o" "../vendor/common/battery_check.c"
+Finished building: ../vendor/common/app_heartbeat.c
+ 
+Building file: ../vendor/common/battery_check_827x.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/battery_check_827x.o" "../vendor/common/battery_check_827x.c"
+Finished building: ../vendor/common/battery_check.c
+Finished building: ../vendor/common/battery_check_827x.c
+Finished building: ../vendor/common/app_proxy.c
+ 
+ 
+ 
+Building file: ../vendor/common/beacon.c
+Building file: ../vendor/common/ble_ll_ota.c
+Invoking: TC32 Compiler
+Building file: ../vendor/common/blt_led.c
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/beacon.o" "../vendor/common/beacon.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/ble_ll_ota.o" "../vendor/common/ble_ll_ota.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/blt_led.o" "../vendor/common/blt_led.c"
+Finished building: ../vendor/common/beacon.c
+ 
+Building file: ../vendor/common/blt_soft_timer.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/blt_soft_timer.o" "../vendor/common/blt_soft_timer.c"
+Finished building: ../vendor/common/blt_led.c
+ 
+Finished building: ../vendor/common/blt_soft_timer.c
+Finished building: ../vendor/common/ble_ll_ota.c
+Building file: ../vendor/common/cmd_interface.c
+ 
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/cmd_interface.o" "../vendor/common/cmd_interface.c"
+Building file: ../vendor/common/config_model.c
+Building file: ../vendor/common/dual_mode_adapt.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/config_model.o" "../vendor/common/config_model.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/dual_mode_adapt.o" "../vendor/common/dual_mode_adapt.c"
+Finished building: ../vendor/common/app_provison.c
+ 
+Building file: ../vendor/common/ev.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/ev.o" "../vendor/common/ev.c"
+Finished building: ../vendor/common/dual_mode_adapt.c
+Finished building: ../vendor/common/cmd_interface.c
+ 
+ 
+Building file: ../vendor/common/factory_reset.c
+Building file: ../vendor/common/fast_provision_model.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/factory_reset.o" "../vendor/common/factory_reset.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/fast_provision_model.o" "../vendor/common/fast_provision_model.c"
+../vendor/common/factory_reset.c: In function 'increase_reset_cnt':
+../vendor/common/factory_reset.c:282:6: warning: implicit declaration of function 'light_dim_set_hw'
+Finished building: ../vendor/common/ev.c
+../vendor/common/factory_reset.c:282:6: warning: implicit declaration of function 'get_pwm_cmp'
+Finished building: ../vendor/common/config_model.c
+ 
+ 
+Building file: ../vendor/common/flash_fw_check.c
+Building file: ../vendor/common/generic_model.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/flash_fw_check.o" "../vendor/common/flash_fw_check.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/generic_model.o" "../vendor/common/generic_model.c"
+Finished building: ../vendor/common/factory_reset.c
+ 
+Building file: ../vendor/common/light.c
+Finished building: ../vendor/common/flash_fw_check.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/light.o" "../vendor/common/light.c"
+ 
+Building file: ../vendor/common/lighting_model.c
+Finished building: ../vendor/common/fast_provision_model.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/lighting_model.o" "../vendor/common/lighting_model.c"
+ 
+Building file: ../vendor/common/lighting_model_HSL.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/lighting_model_HSL.o" "../vendor/common/lighting_model_HSL.c"
+Finished building: ../vendor/common/generic_model.c
+ 
+Building file: ../vendor/common/lighting_model_LC.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/lighting_model_LC.o" "../vendor/common/lighting_model_LC.c"
+Finished building: ../vendor/common/lighting_model_HSL.c
+ 
+Building file: ../vendor/common/lighting_model_xyl.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/lighting_model_xyl.o" "../vendor/common/lighting_model_xyl.c"
+Finished building: ../vendor/common/lighting_model_LC.c
+ 
+Building file: ../vendor/common/mesh_common.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mesh_common.o" "../vendor/common/mesh_common.c"
+Finished building: ../vendor/common/lighting_model_xyl.c
+Finished building: ../vendor/common/light.c
+ 
+ 
+Building file: ../vendor/common/mesh_fn.c
+Building file: ../vendor/common/mesh_lpn.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mesh_fn.o" "../vendor/common/mesh_fn.c"
+Finished building: ../vendor/common/lighting_model.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mesh_lpn.o" "../vendor/common/mesh_lpn.c"
+ 
+Building file: ../vendor/common/mesh_node.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mesh_node.o" "../vendor/common/mesh_node.c"
+Finished building: ../vendor/common/mesh_lpn.c
+ 
+Building file: ../vendor/common/mesh_property.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mesh_property.o" "../vendor/common/mesh_property.c"
+Finished building: ../vendor/common/mesh_common.c
+ 
+Finished building: ../vendor/common/mesh_property.c
+Building file: ../vendor/common/mesh_test_cmd.c
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mesh_test_cmd.o" "../vendor/common/mesh_test_cmd.c"
+Building file: ../vendor/common/myprintf.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/myprintf.o" "../vendor/common/myprintf.c"
+Finished building: ../vendor/common/mesh_fn.c
+ 
+Building file: ../vendor/common/ota_fw_ow.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/ota_fw_ow.o" "../vendor/common/ota_fw_ow.c"
+Finished building: ../vendor/common/mesh_test_cmd.c
+Finished building: ../vendor/common/myprintf.c
+ 
+ 
+Building file: ../vendor/common/scene.c
+Building file: ../vendor/common/scheduler.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/scene.o" "../vendor/common/scene.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/scheduler.o" "../vendor/common/scheduler.c"
+Finished building: ../vendor/common/ota_fw_ow.c
+ 
+Building file: ../vendor/common/sensors_model.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/sensors_model.o" "../vendor/common/sensors_model.c"
+Finished building: ../vendor/common/scene.c
+Finished building: ../vendor/common/sensors_model.c
+ 
+ 
+Building file: ../vendor/common/system_time.c
+Building file: ../vendor/common/time_model.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/system_time.o" "../vendor/common/system_time.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/time_model.o" "../vendor/common/time_model.c"
+Finished building: ../vendor/common/scheduler.c
+ 
+Building file: ../vendor/common/user_ali.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/user_ali.o" "../vendor/common/user_ali.c"
+Finished building: ../vendor/common/mesh_node.c
+Finished building: ../vendor/common/system_time.c
+ 
+ 
+Building file: ../vendor/common/user_ali_time.c
+Building file: ../vendor/common/user_du.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/user_ali_time.o" "../vendor/common/user_ali_time.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/user_du.o" "../vendor/common/user_du.c"
+Finished building: ../vendor/common/user_ali.c
+ 
+Building file: ../vendor/common/user_proc.c
+Finished building: ../vendor/common/time_model.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/user_proc.o" "../vendor/common/user_proc.c"
+ 
+Finished building: ../vendor/common/user_ali_time.c
+Building file: ../vendor/common/vendor_model.c
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/vendor_model.o" "../vendor/common/vendor_model.c"
+Building file: ../vendor/common/nl_api/nl_common.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/nl_api/nl_common.o" "../vendor/common/nl_api/nl_common.c"
+Finished building: ../vendor/common/user_du.c
+ 
+Building file: ../vendor/common/nl_api/nl_model_level.c
+Finished building: ../vendor/common/user_proc.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/nl_api/nl_model_level.o" "../vendor/common/nl_api/nl_model_level.c"
+ 
+Building file: ../vendor/common/nl_api/nl_model_schedules.c
+Finished building: ../vendor/common/nl_api/nl_common.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/nl_api/nl_model_schedules.o" "../vendor/common/nl_api/nl_model_schedules.c"
+ 
+Finished building: ../vendor/common/vendor_model.c
+Building file: ../vendor/common/mi_api/i2c_msc.c
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mi_api/i2c_msc.o" "../vendor/common/mi_api/i2c_msc.c"
+Building file: ../vendor/common/mi_api/mijia_pub_proc.c
+Finished building: ../vendor/common/nl_api/nl_model_level.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mi_api/mijia_pub_proc.o" "../vendor/common/mi_api/mijia_pub_proc.c"
+ 
+Finished building: ../vendor/common/nl_api/nl_model_schedules.c
+Finished building: ../vendor/common/mi_api/i2c_msc.c
+Building file: ../vendor/common/mi_api/telink_sdk_mible_api.c
+ 
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mi_api/telink_sdk_mible_api.o" "../vendor/common/mi_api/telink_sdk_mible_api.c"
+Building file: ../vendor/common/mi_api/mijia_ble_api/mible_api.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mi_api/mijia_ble_api/mible_api.o" "../vendor/common/mi_api/mijia_ble_api/mible_api.c"
+Building file: ../vendor/common/mi_api/mi_vendor/vendor_model_mi.c
+Finished building: ../vendor/common/mi_api/mijia_pub_proc.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mi_api/mi_vendor/vendor_model_mi.o" "../vendor/common/mi_api/mi_vendor/vendor_model_mi.c"
+ 
+Building file: ../vendor/common/mi_api/libs/third_party/micro-ecc/uECC.c
+Finished building: ../vendor/common/mi_api/telink_sdk_mible_api.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mi_api/libs/third_party/micro-ecc/uECC.o" "../vendor/common/mi_api/libs/third_party/micro-ecc/uECC.c"
+ 
+Building file: ../vendor/common/mi_api/libs/mi_config.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/mi_api/libs/mi_config.o" "../vendor/common/mi_api/libs/mi_config.c"
+Finished building: ../vendor/common/mi_api/mi_vendor/vendor_model_mi.c
+Finished building: ../vendor/common/mi_api/mijia_ble_api/mible_api.c
+ 
+ 
+Building file: ../vendor/Training_CCT/Training_CCT.c
+Building file: ../vendor/RD_Type_Device/RD_Type_Device.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/Training_CCT/Training_CCT.o" "../vendor/Training_CCT/Training_CCT.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/RD_Type_Device/RD_Type_Device.o" "../vendor/RD_Type_Device/RD_Type_Device.c"
+Finished building: ../vendor/common/mi_api/libs/mi_config.c
+ 
+Building file: ../vendor/RD_Mess_Data/RD_Mess_Data.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/RD_Mess_Data/RD_Mess_Data.o" "../vendor/RD_Mess_Data/RD_Mess_Data.c"
+Finished building: ../vendor/Training_CCT/Training_CCT.c
+ 
+../vendor/RD_Mess_Data/RD_Mess_Data.c: In function 'Counter_Sched':
+../vendor/RD_Mess_Data/RD_Mess_Data.c:287:5: warning: implicit declaration of function 'g_onoff_set'
+Building file: ../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c
+Finished building: ../vendor/RD_Type_Device/RD_Type_Device.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.o" "../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c"
+ 
+Building file: ../proj/mcu_spec/adc_8263.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/adc_8263.o" "../proj/mcu_spec/adc_8263.c"
+../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c: In function 'RD_Handle_K9BSaveScene':
+Finished building: ../vendor/RD_Mess_Data/RD_Mess_Data.c
+../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c:1145:10: warning: unused variable 'ModeID'
+../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c: In function 'RD_Handle_K9BDeleteScene':
+../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c:1165:10: warning: unused variable 'ModeID'
+../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c: In function 'delDeviceK9B':
+../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c:567:1: warning: control reaches end of non-void function
+../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c: In function 'addDeviceK9B':
+../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c:538:1: warning: control reaches end of non-void function
+ 
+../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c: In function 'CheckK9BActive':
+../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c:374:1: warning: control reaches end of non-void function
+Building file: ../proj/mcu_spec/adc_8266.c
+Finished building: ../proj/mcu_spec/adc_8263.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/adc_8266.o" "../proj/mcu_spec/adc_8266.c"
+ 
+Finished building: ../vendor/common/mi_api/libs/third_party/micro-ecc/uECC.c
+Building file: ../proj/mcu_spec/adc_8267.c
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/adc_8267.o" "../proj/mcu_spec/adc_8267.c"
+Building file: ../proj/mcu_spec/cstartup_8261.S
+Invoking: TC32 CC/Assembler
+Finished building: ../proj/mcu_spec/adc_8266.c
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"proj/mcu_spec/cstartup_8261.o" "../proj/mcu_spec/cstartup_8261.S"
+ 
+Building file: ../proj/mcu_spec/cstartup_8263.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"proj/mcu_spec/cstartup_8263.o" "../proj/mcu_spec/cstartup_8263.S"
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+Finished building: ../proj/mcu_spec/cstartup_8261.S
+Finished building: ../vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.c
+Finished building: ../proj/mcu_spec/adc_8267.c
+ 
+ 
+ 
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+Building file: ../proj/mcu_spec/cstartup_8263_ram.S
+Building file: ../proj/mcu_spec/cstartup_8266.S
+Building file: ../proj/mcu_spec/cstartup_8266_ram.S
+Invoking: TC32 CC/Assembler
+Finished building: ../proj/mcu_spec/cstartup_8263.S
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"proj/mcu_spec/cstartup_8263_ram.o" "../proj/mcu_spec/cstartup_8263_ram.S"
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"proj/mcu_spec/cstartup_8266.o" "../proj/mcu_spec/cstartup_8266.S"
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"proj/mcu_spec/cstartup_8266_ram.o" "../proj/mcu_spec/cstartup_8266_ram.S"
+ 
+Building file: ../proj/mcu_spec/cstartup_8267.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"proj/mcu_spec/cstartup_8267.o" "../proj/mcu_spec/cstartup_8267.S"
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+Finished building: ../proj/mcu_spec/cstartup_8263_ram.S
+Finished building: ../proj/mcu_spec/cstartup_8266.S
+Finished building: ../proj/mcu_spec/cstartup_8266_ram.S
+ 
+ 
+ 
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+Building file: ../proj/mcu_spec/cstartup_8267_ram.S
+Building file: ../proj/mcu_spec/cstartup_8269.S
+Building file: ../proj/mcu_spec/cstartup_8269_ram.S
+Finished building: ../proj/mcu_spec/cstartup_8267.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"proj/mcu_spec/cstartup_8267_ram.o" "../proj/mcu_spec/cstartup_8267_ram.S"
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"proj/mcu_spec/cstartup_8269.o" "../proj/mcu_spec/cstartup_8269.S"
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"proj/mcu_spec/cstartup_8269_ram.o" "../proj/mcu_spec/cstartup_8269_ram.S"
+ 
+Building file: ../proj/mcu_spec/gpio_8263.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/gpio_8263.o" "../proj/mcu_spec/gpio_8263.c"
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+Finished building: ../proj/mcu_spec/cstartup_8267_ram.S
+Finished building: ../proj/mcu_spec/cstartup_8269.S
+Finished building: ../proj/mcu_spec/cstartup_8269_ram.S
+ 
+ 
+ 
+Building file: ../proj/mcu_spec/gpio_8266.c
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+Building file: ../proj/mcu_spec/gpio_8267.c
+Building file: ../proj/mcu_spec/pwm_8263.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/gpio_8266.o" "../proj/mcu_spec/gpio_8266.c"
+Finished building: ../proj/mcu_spec/gpio_8263.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/gpio_8267.o" "../proj/mcu_spec/gpio_8267.c"
+Invoking: TC32 Compiler
+ 
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/pwm_8263.o" "../proj/mcu_spec/pwm_8263.c"
+Finished building: ../proj/mcu_spec/gpio_8266.c
+Building file: ../proj/mcu_spec/pwm_8266.c
+Finished building: ../proj/mcu_spec/gpio_8267.c
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/pwm_8266.o" "../proj/mcu_spec/pwm_8266.c"
+ 
+Building file: ../proj/mcu_spec/pwm_8267.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/pwm_8267.o" "../proj/mcu_spec/pwm_8267.c"
+Building file: ../proj/mcu/putchar.c
+Finished building: ../proj/mcu_spec/pwm_8263.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/putchar.o" "../proj/mcu/putchar.c"
+ 
+Finished building: ../proj/mcu_spec/pwm_8266.c
+ 
+Building file: ../proj/drivers/rf_pa.c
+Building file: ../proj/drivers/usb.c
+Finished building: ../proj/mcu_spec/pwm_8267.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/rf_pa.o" "../proj/drivers/rf_pa.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/usb.o" "../proj/drivers/usb.c"
+ 
+Building file: ../proj/common/breakpoint.c
+Finished building: ../proj/mcu/putchar.c
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/breakpoint.o" "../proj/common/breakpoint.c"
+Building file: ../proj/common/compatibility.c
+Finished building: ../proj/drivers/usb.c
+Invoking: TC32 Compiler
+Finished building: ../proj/drivers/rf_pa.c
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/compatibility.o" "../proj/common/compatibility.c"
+ 
+ 
+Building file: ../proj/common/list.c
+Building file: ../proj/common/log.c
+Finished building: ../proj/common/breakpoint.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/list.o" "../proj/common/list.c"
+Invoking: TC32 Compiler
+ 
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/log.o" "../proj/common/log.c"
+Building file: ../proj/common/mempool.c
+Finished building: ../proj/common/compatibility.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/mempool.o" "../proj/common/mempool.c"
+ 
+Finished building: ../proj/common/log.c
+Finished building: ../proj/common/list.c
+Building file: ../proj/common/mmem.c
+ 
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/mmem.o" "../proj/common/mmem.c"
+Building file: ../proj/common/printf.c
+Invoking: TC32 Compiler
+Building file: ../proj/common/qsort.c
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/printf.o" "../proj/common/printf.c"
+Finished building: ../proj/common/mempool.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/qsort.o" "../proj/common/qsort.c"
+ 
+Finished building: ../proj/common/mmem.c
+Building file: ../proj/common/selection_sort.c
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/selection_sort.o" "../proj/common/selection_sort.c"
+Building file: ../proj/common/tstring.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/tstring.o" "../proj/common/tstring.c"
+Finished building: ../proj/common/printf.c
+Finished building: ../proj/common/qsort.c
+Finished building: ../proj/common/selection_sort.c
+ 
+ 
+ 
+Building file: ../proj/common/tutility.c
+Building file: ../proj/app/usbaud.c
+Building file: ../proj/app/usbcdc.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/tutility.o" "../proj/common/tutility.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/app/usbaud.o" "../proj/app/usbaud.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/app/usbcdc.o" "../proj/app/usbcdc.c"
+Finished building: ../proj/common/tstring.c
+ 
+Finished building: ../proj/app/usbaud.c
+Building file: ../proj/app/usbkb.c
+Finished building: ../proj/app/usbcdc.c
+ 
+Finished building: ../proj/common/tutility.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/app/usbkb.o" "../proj/app/usbkb.c"
+ 
+Building file: ../proj/app/usbmouse.c
+ 
+Invoking: TC32 Compiler
+Building file: ../drivers/8258/adc.c
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/app/usbmouse.o" "../proj/app/usbmouse.c"
+Building file: ../drivers/8258/aes.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/adc.o" "../drivers/8258/adc.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/aes.o" "../drivers/8258/aes.c"
+Finished building: ../proj/app/usbkb.c
+Finished building: ../proj/app/usbmouse.c
+ 
+ 
+Building file: ../drivers/8258/analog.c
+Building file: ../drivers/8258/audio.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/analog.o" "../drivers/8258/analog.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/audio.o" "../drivers/8258/audio.c"
+Finished building: ../drivers/8258/aes.c
+ 
+Finished building: ../drivers/8258/adc.c
+Building file: ../drivers/8258/bsp.c
+ 
+Finished building: ../drivers/8258/analog.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/bsp.o" "../drivers/8258/bsp.c"
+Building file: ../drivers/8258/clock.c
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/clock.o" "../drivers/8258/clock.c"
+Building file: ../drivers/8258/emi.c
+Finished building: ../drivers/8258/audio.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/emi.o" "../drivers/8258/emi.c"
+ 
+Finished building: ../drivers/8258/bsp.c
+Building file: ../drivers/8258/flash.c
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash.o" "../drivers/8258/flash.c"
+Building file: ../drivers/8258/flash_mesh_extend.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash_mesh_extend.o" "../drivers/8258/flash_mesh_extend.c"
+Finished building: ../drivers/8258/clock.c
+ 
+Building file: ../drivers/8258/gpio_8258.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/gpio_8258.o" "../drivers/8258/gpio_8258.c"
+Finished building: ../drivers/8258/emi.c
+ 
+Finished building: ../drivers/8258/flash_mesh_extend.c
+Building file: ../drivers/8258/i2c.c
+Finished building: ../drivers/8258/flash.c
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/i2c.o" "../drivers/8258/i2c.c"
+ 
+Building file: ../drivers/8258/lpc.c
+Building file: ../drivers/8258/qdec.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/lpc.o" "../drivers/8258/lpc.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/qdec.o" "../drivers/8258/qdec.c"
+Finished building: ../drivers/8258/gpio_8258.c
+ 
+Finished building: ../drivers/8258/i2c.c
+Finished building: ../drivers/8258/lpc.c
+Finished building: ../drivers/8258/qdec.c
+Building file: ../drivers/8258/random.c
+ 
+ 
+ 
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/random.o" "../drivers/8258/random.c"
+Building file: ../drivers/8258/s7816.c
+Building file: ../drivers/8258/spi.c
+Building file: ../drivers/8258/timer.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/s7816.o" "../drivers/8258/s7816.c"
+Invoking: TC32 Compiler
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/spi.o" "../drivers/8258/spi.c"
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/timer.o" "../drivers/8258/timer.c"
+Finished building: ../drivers/8258/random.c
+Finished building: ../drivers/8258/s7816.c
+ 
+ 
+Building file: ../drivers/8258/uart.c
+Building file: ../drivers/8258/watchdog.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/uart.o" "../drivers/8258/uart.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/watchdog.o" "../drivers/8258/watchdog.c"
+Finished building: ../drivers/8258/spi.c
+Finished building: ../drivers/8258/timer.c
+ 
+ 
+Building file: ../drivers/8258/flash/flash_mid011460c8.c
+Building file: ../drivers/8258/flash/flash_mid1060c8.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid011460c8.o" "../drivers/8258/flash/flash_mid011460c8.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid1060c8.o" "../drivers/8258/flash/flash_mid1060c8.c"
+Finished building: ../drivers/8258/watchdog.c
+Finished building: ../drivers/8258/uart.c
+Finished building: ../drivers/8258/flash/flash_mid011460c8.c
+ 
+ 
+ 
+Building file: ../drivers/8258/flash/flash_mid11325e.c
+Building file: ../drivers/8258/flash/flash_mid1160c8.c
+Building file: ../drivers/8258/flash/flash_mid13325e.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid11325e.o" "../drivers/8258/flash/flash_mid11325e.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid1160c8.o" "../drivers/8258/flash/flash_mid1160c8.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid13325e.o" "../drivers/8258/flash/flash_mid13325e.c"
+Finished building: ../drivers/8258/flash/flash_mid1060c8.c
+Finished building: ../drivers/8258/flash/flash_mid11325e.c
+ 
+ 
+Building file: ../drivers/8258/flash/flash_mid134051.c
+Finished building: ../drivers/8258/flash/flash_mid1160c8.c
+Building file: ../drivers/8258/flash/flash_mid136085.c
+Invoking: TC32 Compiler
+ 
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid134051.o" "../drivers/8258/flash/flash_mid134051.c"
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid136085.o" "../drivers/8258/flash/flash_mid136085.c"
+Building file: ../drivers/8258/flash/flash_mid1360c8.c
+Finished building: ../drivers/8258/flash/flash_mid13325e.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid1360c8.o" "../drivers/8258/flash/flash_mid1360c8.c"
+Finished building: ../drivers/8258/flash/flash_mid134051.c
+ 
+ 
+Building file: ../drivers/8258/flash/flash_mid1360eb.c
+Building file: ../drivers/8258/flash/flash_mid14325e.c
+Finished building: ../drivers/8258/flash/flash_mid136085.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid1360eb.o" "../drivers/8258/flash/flash_mid1360eb.c"
+Invoking: TC32 Compiler
+ 
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid14325e.o" "../drivers/8258/flash/flash_mid14325e.c"
+Finished building: ../drivers/8258/flash/flash_mid1360c8.c
+Building file: ../drivers/8258/flash/flash_mid1460c8.c
+Finished building: ../drivers/8258/flash/flash_mid1360eb.c
+ 
+Invoking: TC32 Compiler
+ 
+Building file: ../boot/8258/cstartup_8258_RET_16K.S
+tc32-elf-gcc -ffunction-sections -fdata-sections -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\libs" -I"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\vendor\common\mi_api\mijia_ble_api" -D__PROJECT_MESH__=1 -D__telink__ -DCHIP_TYPE=CHIP_TYPE_8258 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"drivers/8258/flash/flash_mid1460c8.o" "../drivers/8258/flash/flash_mid1460c8.c"
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -Xassembler"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware" -DMCU_STARTUP_8258_RET_16K -D__PROJECT_MESH__=1 -DCHIP_TYPE=CHIP_TYPE_8258 -c -o"boot/8258/cstartup_8258_RET_16K.o" "../boot/8258/cstartup_8258_RET_16K.S"
+Finished building: ../drivers/8258/flash/flash_mid14325e.c
+ 
+tc32-elf-gcc.exe: unrecognized option '-XassemblerC:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware'
+Finished building: ../boot/8258/cstartup_8258_RET_16K.S
+Finished building: ../drivers/8258/flash/flash_mid1460c8.c
+ 
+ 
+Building target: firmware.elf
+Invoking: TC32 C Linker
+tc32-elf-ld --gc-sections -L"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware\proj_lib" -T ../boot.link -o"firmware.elf"  ./div_mod.o  ./vendor/user_app/user_app.o  ./vendor/mesh/app.o ./vendor/mesh/app_att.o ./vendor/mesh/main.o  ./vendor/common/app_beacon.o ./vendor/common/app_health.o ./vendor/common/app_heartbeat.o ./vendor/common/app_provison.o ./vendor/common/app_proxy.o ./vendor/common/battery_check.o ./vendor/common/battery_check_827x.o ./vendor/common/beacon.o ./vendor/common/ble_ll_ota.o ./vendor/common/blt_led.o ./vendor/common/blt_soft_timer.o ./vendor/common/cmd_interface.o ./vendor/common/config_model.o ./vendor/common/dual_mode_adapt.o ./vendor/common/ev.o ./vendor/common/factory_reset.o ./vendor/common/fast_provision_model.o ./vendor/common/flash_fw_check.o ./vendor/common/generic_model.o ./vendor/common/light.o ./vendor/common/lighting_model.o ./vendor/common/lighting_model_HSL.o ./vendor/common/lighting_model_LC.o ./vendor/common/lighting_model_xyl.o ./vendor/common/mesh_common.o ./vendor/common/mesh_fn.o ./vendor/common/mesh_lpn.o ./vendor/common/mesh_node.o ./vendor/common/mesh_property.o ./vendor/common/mesh_test_cmd.o ./vendor/common/myprintf.o ./vendor/common/ota_fw_ow.o ./vendor/common/scene.o ./vendor/common/scheduler.o ./vendor/common/sensors_model.o ./vendor/common/system_time.o ./vendor/common/time_model.o ./vendor/common/user_ali.o ./vendor/common/user_ali_time.o ./vendor/common/user_du.o ./vendor/common/user_proc.o ./vendor/common/vendor_model.o  ./vendor/common/nl_api/nl_common.o ./vendor/common/nl_api/nl_model_level.o ./vendor/common/nl_api/nl_model_schedules.o  ./vendor/common/mi_api/i2c_msc.o ./vendor/common/mi_api/mijia_pub_proc.o ./vendor/common/mi_api/telink_sdk_mible_api.o  ./vendor/common/mi_api/mijia_ble_api/mible_api.o  ./vendor/common/mi_api/mi_vendor/vendor_model_mi.o  ./vendor/common/mi_api/libs/third_party/micro-ecc/uECC.o  ./vendor/common/mi_api/libs/mi_config.o  ./vendor/Training_CCT/Training_CCT.o  ./vendor/RD_Type_Device/RD_Type_Device.o  ./vendor/RD_Mess_Data/RD_Mess_Data.o  ./vendor/RD_Add_RoomSceen/RD_Add_RoomSceen.o  ./proj/mcu_spec/adc_8263.o ./proj/mcu_spec/adc_8266.o ./proj/mcu_spec/adc_8267.o ./proj/mcu_spec/cstartup_8261.o ./proj/mcu_spec/cstartup_8263.o ./proj/mcu_spec/cstartup_8263_ram.o ./proj/mcu_spec/cstartup_8266.o ./proj/mcu_spec/cstartup_8266_ram.o ./proj/mcu_spec/cstartup_8267.o ./proj/mcu_spec/cstartup_8267_ram.o ./proj/mcu_spec/cstartup_8269.o ./proj/mcu_spec/cstartup_8269_ram.o ./proj/mcu_spec/gpio_8263.o ./proj/mcu_spec/gpio_8266.o ./proj/mcu_spec/gpio_8267.o ./proj/mcu_spec/pwm_8263.o ./proj/mcu_spec/pwm_8266.o ./proj/mcu_spec/pwm_8267.o  ./proj/mcu/putchar.o  ./proj/drivers/rf_pa.o ./proj/drivers/usb.o  ./proj/common/breakpoint.o ./proj/common/compatibility.o ./proj/common/list.o ./proj/common/log.o ./proj/common/mempool.o ./proj/common/mmem.o ./proj/common/printf.o ./proj/common/qsort.o ./proj/common/selection_sort.o ./proj/common/tstring.o ./proj/common/tutility.o  ./proj/app/usbaud.o ./proj/app/usbcdc.o ./proj/app/usbkb.o ./proj/app/usbmouse.o  ./drivers/8258/adc.o ./drivers/8258/aes.o ./drivers/8258/analog.o ./drivers/8258/audio.o ./drivers/8258/bsp.o ./drivers/8258/clock.o ./drivers/8258/emi.o ./drivers/8258/flash.o ./drivers/8258/flash_mesh_extend.o ./drivers/8258/gpio_8258.o ./drivers/8258/i2c.o ./drivers/8258/lpc.o ./drivers/8258/qdec.o ./drivers/8258/random.o ./drivers/8258/s7816.o ./drivers/8258/spi.o ./drivers/8258/timer.o ./drivers/8258/uart.o ./drivers/8258/watchdog.o  ./drivers/8258/flash/flash_mid011460c8.o ./drivers/8258/flash/flash_mid1060c8.o ./drivers/8258/flash/flash_mid11325e.o ./drivers/8258/flash/flash_mid1160c8.o ./drivers/8258/flash/flash_mid13325e.o ./drivers/8258/flash/flash_mid134051.o ./drivers/8258/flash/flash_mid136085.o ./drivers/8258/flash/flash_mid1360c8.o ./drivers/8258/flash/flash_mid1360eb.o ./drivers/8258/flash/flash_mid14325e.o ./drivers/8258/flash/flash_mid1460c8.o  ./boot/8258/cstartup_8258_RET_16K.o   -llt_8258_mesh -ltangseng_ble_mesh_auth_eclipse_telink -lsoft-fp -lsig_mesh_825x
+Finished building target: firmware.elf
+ 
+make --no-print-directory post-build
+"C:\Users\NV-Smart03\Downloads\RD_CTT_v3\firmware/tl_check_fw.sh"   8258_mesh   firmware
+*****************************************************
+this is post build!! current configure is :8258_mesh
+copy from `firmware.elf' [elf32-littletc32] to `8258_mesh.bin' [binary]
+Runing EXE, par count is: 5
+output done!
+exec successful
+**************** end of post build ******************
+ 
+Invoking: TC32 Create Extended Listing
+Invoking: Print Size
+tc32-elf-objdump -x -D -l -S firmware.elf  >"8258_mesh.lst"
+tc32-elf-size -t firmware.elf
+   text	   data	    bss	    dec	    hex	filename
+ 147880	    712	  23052	 171644	  29e7c	firmware.elf
+ 147880	    712	  23052	 171644	  29e7c	(TOTALS)
+Finished building: sizedummy
+ 
+Finished building: 8258_mesh.lst
+ 
